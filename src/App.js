@@ -1,4 +1,12 @@
+const messages = [
+    "Learn React ⚛️",
+    "Apply for jobs 💼",
+    "Invest your new income 🤑",
+];
+
 export default function App() {
+    const step = 1;
+
     return (
         <div className="steps">
             <div className="numbers">
@@ -7,7 +15,9 @@ export default function App() {
                 <div>3</div>
             </div>
 
-            <p className="message">Hello</p>
+            <p className="message">
+                Step {step}: {messages[step - 1]}
+            </p>
 
             <div className="buttons">
                 <button style={{ backgroundColor: "#7950f2", color: "#fff" }}>
